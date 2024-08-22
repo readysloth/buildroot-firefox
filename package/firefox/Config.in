@@ -1,7 +1,5 @@
 config BR2_PACKAGE_FIREFOX
 	bool "firefox"
-	# buildtime dependencies
-	# runtime dependencies
 	select BR2_PACKAGE_ALSA_LIB
 	select BR2_PACKAGE_FONTCONFIG
 	select BR2_PACKAGE_FREETYPE
@@ -14,6 +12,7 @@ config BR2_PACKAGE_FIREFOX
 	select BR2_PACKAGE_LIBXCB
 	select BR2_PACKAGE_PANGO
 	select BR2_PACKAGE_XSERVER_XORG_SERVER
+	select BR2_PACKAGE_DEJAVU
 	help
 		Firefox Web Browser
 

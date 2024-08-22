@@ -12,6 +12,7 @@ FIREFOX_VERSION = 129.0.1
 define FIREFOX_INSTALL_TARGET_CMDS
 	mkdir -p $(TARGET_DIR)/opt
 	cp -r $(@D)/* $(TARGET_DIR)/opt
+	ln -s /opt/firefox-bin $(TARGET_DIR)/usr/bin/firefox
 endef
 
 $(eval $(generic-package))
